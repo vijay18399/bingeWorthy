@@ -1,0 +1,52 @@
+<div *ngIf="userRole!='ADMIN'" class="movies-page">
+  <app-breadcrumb></app-breadcrumb>
+  <div *ngIf="movies.length && !loading" class="movies">
+    <div routerLink="/content/{{movie._id}}" *ngFor="let movie of movies" class="card">
+      <img [src]="movie.poster || 'assets/images/no-poster-bl.jpg'" alt="">
+      <i  class="add-watchlist fa-solid fa-bookmark"></i>
+      <div class="info">
+        <h5>{{ movie.title }}</h5>
+      </div>
+    </div>
+  </div>
+  <div *ngIf="loading" class="movies-skeleton">
+    <div   class="skeleton" *ngFor="let x of [1,2,3,4]" >
+      <div class="card-skeleton">
+
+      </div>
+      <div class="info"></div>
+    </div>
+  </div>
+  <div class="pagination">
+    <div *ngFor="let page of totalPagesArray" [class.active]="currentPage === page" (click)="goToPage(page)">{{ page }}</div>
+  </div>
+</div>
+<div *ngIf="userRole=='ADMIN'" class="movies-page">
+  <app-breadcrumb></app-breadcrumb>
+  <table class="movies-table">
+    <thead>
+      <tr>
+        <!-- <th>Poster</th> -->
+        <th>Title</th>
+        <th>Genres</th>
+        <th>Release Date</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let movie of movies">
+        <td>{{ movie.title }}</td>
+        <td>{{ movie.genres }}</td>
+        <td>{{ movie.releaseDate | date:'medium' }}</td>
+        <td>
+          <button routerLink="/edit-movie/{{movie._id}}" ><i class="fa-solid fa-pen-to-square"></i></button>
+          <button (click)="deleteMovie(movie._id)" class="red"><i class="fa-solid fa-trash"></i></button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="pagination">
+    <div *ngFor="let page of totalPagesArray" [class.active]="currentPage === page" (click)="goToPage(page)">{{ page }}</div>
+  </div>
+</div>
+

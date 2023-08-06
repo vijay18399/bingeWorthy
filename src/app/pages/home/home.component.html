@@ -1,0 +1,14 @@
+<div class="home-page">
+  <div class="slider-container">
+      <splide>
+        <splide-slide *ngFor="let movie of movies">
+            <img class="slider-image" [src]="movie.poster" alt="" />
+        </splide-slide>
+    </splide>
+  </div>
+  <div class="main-container">
+      <h1>Find Your Next Addictive Series</h1>
+      <p>Filtered For You: Unearth Binge-Worthy Movies and Series Tailored to Your Tastes.</p>
+
+  </div>
+</div>

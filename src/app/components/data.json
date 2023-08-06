@@ -1,0 +1,216 @@
+[{
+  "title": "Iron Man",
+  "genres": ["Action", "Adventure", "Sci-Fi"],
+  "plot": "After being held captive in an Afghan cave, billionaire engineer Tony Stark creates a unique weaponized suit of armor to fight evil.",
+  "type":"MOVIE"
+}, {
+  "title": "The Incredible Hulk",
+  "genres": ["Action", "Adventure", "Sci-Fi"],
+  "plot": "Bruce Banner, a scientist on the run from the U.S. Government, must find a cure for the monster he turns into whenever he loses his temper.",
+  "type":"MOVIE"
+}, {
+  "title": "Iron Man 2",
+  "genres": ["Action", "Adventure", "Sci-Fi"],
+  "plot": "With the world now aware of his identity as Iron Man, Tony Stark must contend with both his declining health and a vengeful mad man with ties to his father's legacy.",
+  "type":"MOVIE"
+}, {
+  "title": "Thor",
+  "genres": ["Action", "Sci-Fi"],
+  "plot": "The powerful but arrogant god Thor is cast out of Asgard to live amongst humans in Midgard (Earth), where he soon becomes one of their finest defenders.",
+  "type":"MOVIE"
+}, {
+  "title": "Captain America: The First Avenger",
+  "genres": ["Action", "Fantasy"],
+  "plot": "Steve Rogers, a rejected military soldier, transforms into Captain America after taking a dose of a \"Super-Soldier serum\". But being Captain America comes at a price as he attempts to take down a warmonger and a terrorist organization.",
+  "type":"MOVIE"
+}, {
+  "title": "The Avengers",
+  "genres": ["Action", "Adventure", "Sci-Fi"],
+  "plot": "Earth's mightiest heroes must come together and learn to fight as a team if they are going to stop the mischievous Loki and his alien army from enslaving humanity.",
+  "type":"MOVIE"
+}, {
+  "title": "Iron Man 3",
+  "genres": ["Action", "Sci-Fi"],
+  "plot": "When Tony Stark's world is torn apart by a formidable terrorist called the Mandarin, he starts an odyssey of rebuilding and retribution.",
+  "type":"MOVIE"
+}, {
+  "title": "Thor: The Dark World",
+  "genres": ["Action", "Adventure", "Sci-Fi"],
+  "plot": "When the Dark Elves attempt to plunge the universe into darkness, Thor must embark on a perilous and personal journey that will reunite him with doctor Jane Foster.",
+  "type":"MOVIE"
+}, {
+  "title": "Captain America: The Winter Soldier",
+  "genres": ["Action", "Adventure", "Fantasy"],
+  "plot": "As Steve Rogers struggles to embrace his role in the modern world, he teams up with a fellow Avenger and S.H.I.E.L.D agent, Black Widow, to battle a new threat from history: an assassin known as the Winter Soldier.",
+  "type":"MOVIE"
+}, {
+  "title": "Guardians of the Galaxy",
+  "genres": ["Action", "Adventure", "Sci-Fi"],
+  "plot": "A group of intergalactic criminals must pull together to stop a fanatical warrior with plans to purge the universe.",
+  "type":"MOVIE"
+}, {
+  "title": "Avengers: Age of Ultron",
+  "genres": ["Action", "Adventure", "Comedy"],
+  "plot": "When Tony Stark and Bruce Banner try to jump-start a dormant peacekeeping program called Ultron, things go horribly wrong and it's up to Earth's mightiest heroes to stop the villainous Ultron from enacting his terrible plan.",
+  "type":"MOVIE"
+}, {
+  "title": "Ant-Man",
+  "genres": ["Action", "Adventure", "Sci-Fi"],
+  "plot": "Armed with a super-suit with the astonishing ability to shrink in scale but increase in strength, cat burglar Scott Lang must embrace his inner hero and help his mentor, Dr. Hank Pym, pull off a plan that will save the world.",
+  "type":"MOVIE"
+}, {
+  "title": "Captain America: Civil War",
+  "genres": ["Action", "Comedy", "Sci-Fi"],
+  "plot": "Political involvement in the Avengers' affairs causes a rift between Captain America and Iron Man.",
+  "type":"MOVIE"
+}, {
+  "title": "Doctor Strange",
+  "genres": ["Action", "Sci-Fi"],
+  "plot": "While on a journey of physical and spiritual healing, a brilliant neurosurgeon is drawn into the world of the mystic arts.",
+  "type":"MOVIE"
+}, {
+  "title": "Guardians of the Galaxy Vol. 2",
+  "genres": ["Action", "Adventure", "Fantasy"],
+  "plot": "The Guardians struggle to keep together as a team while dealing with their personal family issues, notably Star-Lord's encounter with his father, the ambitious celestial being Ego.",
+  "type":"MOVIE"
+}, {
+  "title": "Spider-Man: Homecoming",
+  "genres": ["Action", "Adventure", "Comedy"],
+  "plot": "Peter Parker balances his life as an ordinary high school student in Queens with his superhero alter-ego Spider-Man, and finds himself on the trail of a new menace prowling the skies of New York City.",
+  "type":"MOVIE"
+}, {
+  "title": "Thor: Ragnarok",
+  "genres": ["Action", "Adventure", "Sci-Fi"],
+  "plot": "Imprisoned on the planet Sakaar, Thor must race against time to return to Asgard and stop Ragnarök, the destruction of his world, at the hands of the powerful and ruthless villain Hela.",
+  "type":"MOVIE"
+}, {
+  "title": "Black Panther",
+  "genres": ["Action", "Adventure", "Comedy"],
+  "plot": "T'Challa, heir to the hidden but advanced kingdom of Wakanda, must step forward to lead his people into a new future and must confront a challenger from his country's past.",
+  "type":"MOVIE"
+}, {
+  "title": "Avengers: Infinity War",
+  "genres": ["Action", "Adventure", "Sci-Fi"],
+  "plot": "The Avengers and their allies must be willing to sacrifice all in an attempt to defeat the powerful Thanos before his blitz of devastation and ruin puts an end to the universe.",
+  "type":"MOVIE"
+}, {
+  "title": "Ant-Man and the Wasp",
+  "genres": ["Action", "Adventure", "Sci-Fi"],
+  "plot": "As Scott Lang balances being both a superhero and a father, Hope van Dyne and Dr. Hank Pym present an urgent new mission that finds the Ant-Man fighting alongside The Wasp to uncover secrets from their past.",
+  "type":"MOVIE"
+}, {
+  "title": "Captain Marvel",
+  "genres": ["Action", "Adventure", "Comedy"],
+  "plot": "Carol Danvers becomes one of the universe's most powerful heroes when Earth is caught in the middle of a galactic war between two alien races.",
+  "type":"MOVIE"
+}, {
+  "title": "Avengers: Endgame",
+  "genres": ["Action", "Adventure", "Sci-Fi"],
+  "plot": "After the devastating events of Avengers: Infinity War (2018), the universe is in ruins. With the help of remaining allies, the Avengers assemble once more in order to reverse Thanos' actions and restore balance to the universe.",
+  "type":"MOVIE"
+}, {
+  "title": "Spider-Man: Far from Home",
+  "genres": ["Action", "Adventure", "Drama"],
+  "plot": "Following the events of Avengers: Endgame (2019), Spider-Man must step up to take on new threats in a world that has changed forever.",
+  "type":"MOVIE"
+}, {
+  "title": "Black Widow",
+  "genres": ["Action", "Adventure", "Comedy"],
+  "plot": "Natasha Romanoff confronts the darker parts of her ledger when a dangerous conspiracy with ties to her past arises.",
+  "type":"MOVIE"
+}, {
+  "title": "Shang-Chi and the Legend of the Ten Rings",
+  "genres": ["Action", "Adventure", "Sci-Fi"],
+  "plot": "Shang-Chi, the master of weaponry-based Kung Fu, is forced to confront his past after being drawn into the Ten Rings organization.",
+  "type":"MOVIE"
+}, {
+  "title": "Eternals",
+  "genres": ["Action", "Adventure", "Fantasy"],
+  "plot": "The saga of the Eternals, a race of immortal beings who lived on Earth and shaped its history and civilizations.",
+  "type":"MOVIE"
+}, {
+  "title": "Spider-Man: No Way Home",
+  "genres": ["Action", "Adventure", "Fantasy"],
+  "plot": "With Spider-Man's identity now revealed, Peter asks Doctor Strange for help. When a spell goes wrong, dangerous foes from other worlds start to appear, forcing Peter to discover what it truly means to be Spider-Man.",
+  "type":"MOVIE"
+}, {
+  "title": "Doctor Strange in the Multiverse of Madness",
+  "genres": ["Action", "Adventure", "Fantasy"],
+  "plot": "Doctor Strange teams up with a mysterious teenage girl from his dreams who can travel across multiverses, to battle multiple threats, including other-universe versions of himself, which threaten to wipe out millions across the multiverse. They seek help from Wanda the Scarlet Witch, Wong and others.",
+  "type":"MOVIE"
+}, {
+  "title": "Thor: Love and Thunder",
+  "genres": ["Action", "Adventure", "Fantasy"],
+  "plot": "Thor enlists the help of Valkyrie, Korg and ex-girlfriend Jane Foster to fight Gorr the God Butcher, who intends to make the gods extinct.",
+  "type":"MOVIE"
+}, {
+  "title": "Black Panther: Wakanda Forever",
+  "genres": ["Action", "Adventure", "Comedy"],
+  "plot": "The people of Wakanda fight to protect their home from intervening world powers as they mourn the death of King T'Challa.",
+  "type":"MOVIE"
+}, {
+  "title": "Ant-Man and the Wasp: Quantumania",
+  "genres": ["Action", "Adventure", "Drama"],
+  "plot": "Scott Lang and Hope Van Dyne are dragged into the Quantum Realm, along with Hope's parents and Scott's daughter Cassie. Together they must find a way to escape, but what secrets is Hope's mother hiding? And who is the mysterious Kang?",
+  "type":"MOVIE"
+}, {
+  "title": "Guardians of the Galaxy Vol. 3",
+  "genres": ["Action", "Adventure", "Comedy"],
+  "plot": "Still reeling from the loss of Gamora, Peter Quill rallies his team to defend the universe and one of their own - a mission that could mean the end of the Guardians if not successful.",
+  "type":"MOVIE"
+}, {
+  "title": "The Marvels",
+  "genres": ["Action", "Adventure", "Comedy"],
+  "plot": null,
+  "type":"MOVIE"
+}, {
+  "title": "Deadpool 3",
+  "genres": ["Action", "Adventure", "Fantasy"],
+  "plot": null,
+  "type":"MOVIE"
+}, {
+  "title": "Thunderbolts",
+  "genres": ["Action", "Comedy", "Sci-Fi"],
+  "plot": null,
+  "type":"MOVIE"
+}, {
+  "title": "Captain America: Brave New World",
+  "genres": ["Action", "Adventure", "Crime"],
+  "plot": null,
+  "type":"MOVIE"
+}, {
+  "title": "Blade",
+  "genres": ["Action", "Adventure", "Sci-Fi"],
+  "plot": null,
+  "type":"MOVIE"
+}, {
+  "title": "Avengers: The Kang Dynasty",
+  "genres": ["Action", "Adventure", "Fantasy"],
+  "plot": null,
+  "type":"MOVIE"
+}, {
+  "title": "Avengers: Secret Wars",
+  "genres": ["Action", "Adventure", "Sci-Fi"],
+  "plot": null,
+  "type":"MOVIE"
+}, {
+  "title": "Fantastic Four",
+  "genres": ["Action", "Adventure", "Sci-Fi"],
+  "plot": null,
+  "type":"MOVIE"
+}, {
+  "title": "Armor Wars",
+  "genres": ["Action", "Adventure", "Sci-Fi"],
+  "plot": null,
+  "type":"MOVIE"
+}, {
+  "title": "Untitled Shang-Chi Sequel",
+  "genres": ["Action", "Adventure", "Drama"],
+  "plot": null,
+  "type":"MOVIE"
+}, {
+  "title": "Untitled Spider-Man Sequel",
+  "genres": ["Action", "Adventure", "Fantasy"],
+  "plot": null,
+  "type":"MOVIE"
+}]

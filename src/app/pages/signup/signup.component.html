@@ -1,0 +1,40 @@
+<div class="signup-page">
+  <div class="card">
+
+    <form [formGroup]="signUpForm" (ngSubmit)="signUp()">
+      <h2>Sign Up</h2>
+      <div class="networkError" *ngIf="errorMessage">{{errorMessage}}</div>
+      <div class="input-container">
+        <label for="firstName">First Name</label>
+        <input type="text" id="firstName" formControlName="firstName">
+        <div *ngIf="formControls['firstName'].dirty || formControls['firstName'].touched " class="errors">
+            <div *ngIf="formControls['firstName'].errors?.['required']">First Name is required</div>
+        </div>
+      </div>
+      <div class="input-container">
+        <label for="lastName">Last Name</label>
+        <input type="text" id="lastName" formControlName="lastName">
+        <div *ngIf="formControls['lastName'].dirty || formControls['lastName'].touched" class="errors">
+          <div *ngIf="formControls['lastName'].errors?.['required']">Last Name is required</div>
+        </div>
+      </div>
+      <div class="input-container">
+        <label for="email">Email</label>
+        <input type="email" id="email" formControlName="email">
+        <div *ngIf="formControls['email'].dirty || formControls['email'].touched" class="errors">
+          <div *ngIf="formControls['email'].errors?.['required']">Email is required</div>
+          <div *ngIf="formControls['email'].errors?.['email']">Valid Email required</div>
+        </div>
+      </div>
+      <div class="input-container">
+        <label for="password">Password</label>
+        <input type="password" id="password" formControlName="password">
+        <div *ngIf="formControls['password'].dirty || formControls['password'].touched" class="errors">
+          <div *ngIf="formControls['password'].errors?.['required']">Password is required</div>
+          <div *ngIf="formControls['password'].errors?.['minlength']">Password must be atleast  of length 6</div>
+        </div>
+      </div>
+      <button type="submit" [disabled]="signUpForm.invalid">Sign Up</button>
+    </form>
+  </div>
+</div>

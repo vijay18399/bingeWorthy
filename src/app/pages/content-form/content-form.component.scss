@@ -1,0 +1,87 @@
+@import 'mixins';
+
+.form-page {
+  min-height: calc(100vh - 65px);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  form {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+    width: 100%;
+    .input-container {
+        @include inputContainer(false);
+        width: 100%;
+        max-width: 250px;
+        margin: 10px;
+      }
+    .inputs {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 20px;
+
+        .col {
+          flex: 1 1 32%;
+          margin: 10px;
+        }
+      }
+
+    }
+    button {
+      @include button(large);
+      &:disabled{
+        background-color: aliceblue;
+        color: rgb(5, 49, 88);
+        cursor: not-allowed;
+      }
+    }
+  // .card {
+  //   width: 90%;
+  //   height: 100%;
+  //   padding: 10px 27px;
+  //   border-radius: 10px;
+  //   border: 1px solid lightgrey;
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  //   flex-direction: column;
+
+  //     .card-title{
+  //       display: flex;
+  //       width: 100%;
+  //       align-items: center;
+  //       justify-content: space-between;
+  //       h2 {
+  //         font-size: 18px;
+  //         font-weight: 500;
+  //         line-height: 32px;
+  //       }
+  //     }
+  //     .input-container {
+  //       @include inputContainer(false);
+  //       width: 100%;
+  //       max-width: 250px;
+  //       margin: 10px;
+  //     }
+  //     .errors {
+  //       margin: 5px;
+  //       color: rgb(231, 14, 14);
+  //     }
+
+
+  //   }
+  }
+}

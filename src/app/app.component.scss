@@ -1,0 +1,44 @@
+@import 'mixins';
+header {
+  font-family: "Belanosima";
+  height: 48px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid lightgray;
+
+  .nav-brand {
+    align-items: center;
+    display: flex;
+    margin-left: 12px;
+    text-align: center;
+
+    .link {
+      cursor: pointer;
+      text-decoration: none;
+      h1 {
+        align-self: flex-end;
+        color: $color_1;
+        font-size: 25px;
+        text-align: center;
+      }
+    }
+  }
+
+  .nav-links {
+    .nav-link {
+      @include  button(small);
+      background-color: $background-color_1;
+      color: $color_1;
+      &:hover,&.active {
+        background-color: $background-color_2;
+        color: $color_3;
+      }
+    }
+    .nav-button {
+       @include  button(small);
+    }
+  }
+}
+
+
