@@ -238,21 +238,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "AppModule": () => (/* binding */ AppModule)
 /* harmony export */ });
-/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! @angular/platform-browser */ 2512);
-/* harmony import */ var ngx_splide__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ngx-splide */ 4352);
+/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! @angular/platform-browser */ 2512);
+/* harmony import */ var ngx_splide__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ngx-splide */ 4352);
 /* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./app-routing.module */ 158);
 /* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./app.component */ 5041);
 /* harmony import */ var _pages_home_home_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./pages/home/home.component */ 5245);
 /* harmony import */ var _pages_search_search_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./pages/search/search.component */ 1164);
-/* harmony import */ var _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! @angular/platform-browser/animations */ 9240);
-/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! @angular/forms */ 9542);
+/* harmony import */ var _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! @angular/platform-browser/animations */ 9240);
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! @angular/forms */ 9542);
 /* harmony import */ var _pages_login_login_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./pages/login/login.component */ 4902);
 /* harmony import */ var _components_breadcrumb_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/breadcrumb.component */ 1447);
 /* harmony import */ var _components_chip_input_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/chip-input.component */ 8174);
 /* harmony import */ var _components_input_upload_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/input-upload.component */ 5551);
 /* harmony import */ var _components_modal_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/modal.component */ 8158);
 /* harmony import */ var _pages_signup_signup_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./pages/signup/signup.component */ 8406);
-/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! @angular/common/http */ 3765);
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! @angular/common/http */ 3765);
 /* harmony import */ var _pages_profile_profile_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./pages/profile/profile.component */ 8220);
 /* harmony import */ var _gaurds_auth_guard__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./gaurds/auth.guard */ 8545);
 /* harmony import */ var _pages_content_form_content_form_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./pages/content-form/content-form.component */ 6271);
@@ -261,7 +261,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_counter_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./components/counter.component */ 3286);
 /* harmony import */ var _pages_season_form_season_form_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./pages/season-form/season-form.component */ 235);
 /* harmony import */ var _components_collapsible_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./components/collapsible.component */ 3670);
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! @angular/common */ 6477);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! @angular/core */ 6839);
+
 
 
 
@@ -295,14 +297,17 @@ AppModule.ɵmod = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_18__["ɵɵ
   bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_1__.AppComponent]
 });
 AppModule.ɵinj = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_18__["ɵɵdefineInjector"]({
-  providers: [_gaurds_auth_guard__WEBPACK_IMPORTED_MODULE_11__.AuthGuard],
-  imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_19__.BrowserModule, _app_routing_module__WEBPACK_IMPORTED_MODULE_0__.AppRoutingModule, _angular_forms__WEBPACK_IMPORTED_MODULE_20__.FormsModule, _angular_forms__WEBPACK_IMPORTED_MODULE_20__.ReactiveFormsModule, _angular_common_http__WEBPACK_IMPORTED_MODULE_21__.HttpClientModule, ngx_splide__WEBPACK_IMPORTED_MODULE_22__.NgxSplideModule, _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_23__.BrowserAnimationsModule]
+  providers: [{
+    provide: _angular_common__WEBPACK_IMPORTED_MODULE_19__.LocationStrategy,
+    useClass: _angular_common__WEBPACK_IMPORTED_MODULE_19__.HashLocationStrategy
+  }, _gaurds_auth_guard__WEBPACK_IMPORTED_MODULE_11__.AuthGuard],
+  imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_20__.BrowserModule, _app_routing_module__WEBPACK_IMPORTED_MODULE_0__.AppRoutingModule, _angular_forms__WEBPACK_IMPORTED_MODULE_21__.FormsModule, _angular_forms__WEBPACK_IMPORTED_MODULE_21__.ReactiveFormsModule, _angular_common_http__WEBPACK_IMPORTED_MODULE_22__.HttpClientModule, ngx_splide__WEBPACK_IMPORTED_MODULE_23__.NgxSplideModule, _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_24__.BrowserAnimationsModule]
 });
 
 (function () {
   (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_18__["ɵɵsetNgModuleScope"](AppModule, {
     declarations: [_app_component__WEBPACK_IMPORTED_MODULE_1__.AppComponent, _pages_home_home_component__WEBPACK_IMPORTED_MODULE_2__.HomeComponent, _pages_search_search_component__WEBPACK_IMPORTED_MODULE_3__.SearchComponent, _pages_login_login_component__WEBPACK_IMPORTED_MODULE_4__.LoginComponent, _components_breadcrumb_component__WEBPACK_IMPORTED_MODULE_5__.BreadcrumbComponent, _components_chip_input_component__WEBPACK_IMPORTED_MODULE_6__.chipInputComponent, _components_input_upload_component__WEBPACK_IMPORTED_MODULE_7__.InputUploadComponent, _components_modal_component__WEBPACK_IMPORTED_MODULE_8__.ModalComponent, _pages_signup_signup_component__WEBPACK_IMPORTED_MODULE_9__.SignupComponent, _pages_profile_profile_component__WEBPACK_IMPORTED_MODULE_10__.ProfileComponent, _pages_content_form_content_form_component__WEBPACK_IMPORTED_MODULE_12__.ContentFormComponent, _pages_contents_contents_component__WEBPACK_IMPORTED_MODULE_13__.ContentsComponent, _pages_content_content_component__WEBPACK_IMPORTED_MODULE_14__.ContentComponent, _components_counter_component__WEBPACK_IMPORTED_MODULE_15__.CounterComponent, _components_collapsible_component__WEBPACK_IMPORTED_MODULE_17__.CollapsiblePanelComponent, _pages_season_form_season_form_component__WEBPACK_IMPORTED_MODULE_16__.SeasonFormComponent],
-    imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_19__.BrowserModule, _app_routing_module__WEBPACK_IMPORTED_MODULE_0__.AppRoutingModule, _angular_forms__WEBPACK_IMPORTED_MODULE_20__.FormsModule, _angular_forms__WEBPACK_IMPORTED_MODULE_20__.ReactiveFormsModule, _angular_common_http__WEBPACK_IMPORTED_MODULE_21__.HttpClientModule, ngx_splide__WEBPACK_IMPORTED_MODULE_22__.NgxSplideModule, _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_23__.BrowserAnimationsModule]
+    imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_20__.BrowserModule, _app_routing_module__WEBPACK_IMPORTED_MODULE_0__.AppRoutingModule, _angular_forms__WEBPACK_IMPORTED_MODULE_21__.FormsModule, _angular_forms__WEBPACK_IMPORTED_MODULE_21__.ReactiveFormsModule, _angular_common_http__WEBPACK_IMPORTED_MODULE_22__.HttpClientModule, ngx_splide__WEBPACK_IMPORTED_MODULE_23__.NgxSplideModule, _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_24__.BrowserAnimationsModule]
   });
 })();
 

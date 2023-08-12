@@ -22,6 +22,7 @@ import { ContentComponent } from './pages/content/content.component';
 import { CounterComponent } from './components/counter.component';
 import { SeasonFormComponent } from './pages/season-form/season-form.component';
 import { CollapsiblePanelComponent } from './components/collapsible.component';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 @NgModule({
   declarations: [
     AppComponent,
@@ -50,7 +51,13 @@ import { CollapsiblePanelComponent } from './components/collapsible.component';
     NgxSplideModule,
     BrowserAnimationsModule
   ],
-  providers: [AuthGuard],
+  providers: [
+  {
+    provide: LocationStrategy,
+    useClass: HashLocationStrategy,
+  },
+  AuthGuard
+],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
