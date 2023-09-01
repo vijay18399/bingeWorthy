@@ -1,44 +1,111 @@
-@import 'mixins';
-header {
-  font-family: "Belanosima";
-  height: 48px;
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-  border-bottom: 1px solid lightgray;
+@import "mixins";
+@import "colors";
+@import "animations";
+@import "media";
+nav{
 
-  .nav-brand {
-    align-items: center;
-    display: flex;
-    margin-left: 12px;
+    @include is-flex(center,space-between);
+    height: calc(12vh - 1px);
+    border: 1px solid #E0E0E0;
+    @include mobile {
+      height: calc(10vh - 2px);
+      &.searchbar{
+        height: 125px;
+        flex-direction: column;
+        justify-content: space-around;
+      }
+    }
+
+    .brand{
+    font-size: 1.2rem;
     text-align: center;
-
-    .link {
+      color: $violet;
+    }
+   .search-inputcontainer{
+    position: relative;
+    width: calc(100% - 350px);
+    @include mobile {
+      width: 90%;
+    }
+      input{
+        height: 35px;
+        width: 90%;
+        background: rgb(255, 255, 255);
+        border: 1px solid rgb(221, 221, 221);
+        border-radius: 8px;
+        box-shadow: rgba(0, 0, 0, 0.08) 0px 0px 8px;
+        padding-left: 35px;
+        &:focus{
+          outline: 0px;
+        }
+      }
+      i{
+        position: absolute;
+        left: 12px;
+        top: 12px;
+      }
+    }
+    .search-container {
+      border: 0px;
+      border-radius: 5px;
+      height: 40px;
+      width: 300px;
+      background-color: #F8F8F8;
       cursor: pointer;
-      text-decoration: none;
-      h1 {
-        align-self: flex-end;
-        color: $color_1;
-        font-size: 25px;
-        text-align: center;
+      margin: auto;
+      overflow: hidden;
+      position: relative;
+      @include mobile {
+        display: none;
       }
-    }
-  }
+      .suggestions {
+          margin: 0 0.625rem;
+          padding: 0;
+          animation: scrollUp 4s infinite;
+          .suggestion {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            height: 40px;
+            list-style: none;
+            color: #e0dddd;
+            span{
+             color: #8e8c8c;
+            }
+        }
+      }
+      i{
+        position: absolute;
+        top: 12px;
+        right: 15px;
+      }
 
-  .nav-links {
-    .nav-link {
-      @include  button(small);
-      background-color: $background-color_1;
-      color: $color_1;
-      &:hover,&.active {
-        background-color: $background-color_2;
-        color: $color_3;
-      }
     }
-    .nav-button {
-       @include  button(small);
+
+
+
+    .navbar{
+       @include is-flex(center,space-between);
+       .nav-item{
+        font-size: 0.9rem;
+        color: $black;
+        margin-right: 10px;
+        cursor: pointer;
+        &:nth-child(1){
+          @include mobile {
+            display: none;
+          }
+        }
+        &:hover{
+          color: $blue;
+        }
+        &.active{
+          background-color: #18193F;
+          color: $white;
+          padding: 5px 10px;
+          border-radius: 5px;
+        }
+       }
     }
-  }
+
 }
-
-

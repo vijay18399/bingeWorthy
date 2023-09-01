@@ -1,78 +1,33 @@
-@import "colors";
-@mixin inputContainer($innerBtn) {
-        position: relative;
-        margin-bottom: 20px;
-        width: 100%;
-        label {
-          color: #888;
-          left: 10px;
-          position: absolute;
-          top: 10px;
-        }
+$spaceamounts: (2,4,8,10,12,14,16,18,20,22,24); // Adjust this to include the pixel amounts you need.
+$sides: (top, bottom, left, right); // Leave this variable alone
 
-        input,textarea,select{
-          border: 1px solid #ddd;
-          border-radius: 10px;
-          font-size: 18px;
-          min-height: 40px;
-          padding: 20px 0px 0px  10px;
-          width: 100%;
-          margin-right: 10px;
-          display: flex;
-        }
-        select {
-          padding: 10px;
-         padding-top: 30px;
-        }
-        textarea{
-          padding-top: 30px;
-        }
-        input:focus,textarea:focus,select:focus{
-          outline: 2px solid $color_2;
-        }
-        @if($innerBtn){
-        button{
-          background-color: $color_1;
-          color: $color_3;
-          border: 0px;
-          width: 24px;
-          height: 24px;
-          border-radius: 50%;
-          right: 10px;
-          position: absolute;
-          top: 40%;
-          cursor: pointer;
-        }
-        button:disabled{
-          background-color: gray;
-          color: $color_3;
-        }
-        }
-}
-
-@mixin button($size) {
-  background-color: $background-color_2;
-  color: $color_3;
-  border: none;
-  border-radius: 18px;
-  cursor: pointer;
-  font-size: 14px;
-  margin: 0px 4px;
-  text-decoration: none;
-   @if $size == small {
-      padding: 6px 11px;
-  } @else if $size == medium {
-    padding: 10px 20px;
-  } @else if $size == large {
-    padding: 12px 24px;
+@each $space in $spaceamounts {
+  .m-#{$space} {
+    margin: #{$space}px !important;
   }
-  &:hover {
-    background-color: $background-color_3;
+  .p-#{$space} {
+    padding: #{$space}px !important;
+  }
+  @each $side in $sides {
+    .m-#{str-slice($side, 0, 1)}-#{$space} {
+      margin-#{$side}: #{$space}px !important;
+    }
+    .p-#{str-slice($side, 0, 1)}-#{$space} {
+      padding-#{$side}: #{$space}px !important;
+    }
   }
 }
 
-@mixin centerFlexbox {
+// ========== [IS-FLEX]
+@mixin is-flex($align, $justify) {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: $align;
+  justify-content: $justify;
+}
+// ========== [IS-FLEX-COLOUMN]
+@mixin is-flex-column($align, $justify) {
+  display: flex;
+  flex-direction: column;
+  align-items: $align;
+  justify-content: $justify;
 }

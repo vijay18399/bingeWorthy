@@ -1,0 +1,61 @@
+<div *ngIf="movieId && movie" class="movie-page">
+  <img class="poster" [src]="movie.poster || 'assets/images/no-poster.jpg'" alt="">
+  <div class="movie-details">
+    <div class="breadcrumb">
+
+    </div>
+    <h2 class="title">{{ movie.title }}</h2>
+    <div class="genres">
+      <span class="genre" *ngFor="let genre of movie.genres">{{ genre }}</span>
+    </div>
+    <p class="plot">{{ movie.plot }}</p>
+    <div class="details">
+      <div *ngIf="movie.tags.length" class="details-item">
+        <span class="label">Tags:</span>
+        <span class="value">
+          <span class="tag" *ngFor="let tag of movie.tags">{{ tag }}</span>
+        </span>
+      </div>
+      <div *ngIf="movie.releaseDate" class="details-item">
+        <span class="label">Release Date:</span>
+        <span class="value">{{ movie.releaseDate | date:'medium' }}</span>
+      </div>
+    </div>
+    <div class="actors">
+      <div class="actor-item" *ngFor="let actor of movie.actors">
+        <img [src]="actor.profile || 'assets/images/default-profile.png'" alt="">
+        <span class="value">{{ actor.name }}</span>
+      </div>
+    </div>
+    <div class="seasons-tabs">
+      <div class="season-btns" >
+        <button [class.active]="season.number == activeSeason.number" *ngFor="let season of movie.seasons;let i = index" (click)="toggleSeason(i)"> Season {{ i+1 }}</button>
+      </div>
+      <div *ngIf="activeSeason" class="season-tab">
+        <div>
+          <p *ngIf="activeSeason.description" class="description">{{ activeSeason.description }}</p>
+          <!-- Episodes List -->
+          <ul class="episodes-list">
+            <li *ngFor="let episode of activeSeason.episodes; let i = index">
+              <div>
+                <span> S{{activeSeason.number}}E{{i+1}} </span>
+                <span>
+                  <i class="fa-solid fa-calendar-days"></i>
+                  5 Mar 2021
+                </span>
+
+              </div>
+              <h2>{{ episode.title }}</h2>
+              <p>
+                {{ episode.description }}
+              </p>
+
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+</div>
+</div>

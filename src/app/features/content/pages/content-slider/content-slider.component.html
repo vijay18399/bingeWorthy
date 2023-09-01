@@ -1,0 +1,40 @@
+
+<div class="login-page">
+  <div *ngIf="movies.length==0" class="loader">
+        <div class="circle" id="a"></div>
+        <div class="circle" id="b"></div>
+        <div class="circle" id="c"></div>
+        <div class="circle" id="d"></div>
+  </div>
+  <div *ngIf="movies.length!=0" class="reelsContainer">
+      <div [id]="x._id"  *ngFor="let x of movies;let i=index" class="reel">
+        <div class="detail">
+          <img  [src]="x.poster || 'assets/images/no-poster.jpg'" alt="">
+          <div class="info">
+            {{x.title}}
+          </div>
+          <div class="actions">
+            <div class="action active">
+              <i class="fa-solid fa-thumbs-up"></i>
+              <label>121K</label>
+            </div>
+            <div class="action">
+              <i class="fa-solid fa-thumbs-down"></i>
+              <label>1K</label>
+            </div>
+            <div routerLink="/content/{{x._id}}" class="action">
+              <i class="fa-solid fa-eye"></i>
+              <label>11K</label>
+            </div>
+            <div class="action">
+            <i class="fa-solid fa-bookmark"></i>
+            </div>
+          </div>
+        </div>
+        <div [ngStyle]="{justifyContent: i==0 ? 'flex-end' : 'space-between' }" class="nav-buttons">
+          <i *ngIf="i!=0" (click)="navTo(i-1)" class="fa-solid fa-arrow-up"></i>
+          <i  *ngIf="i+1!=totalCount"  (click)="navTo(i+1)" class="fa-solid fa-arrow-down"></i>
+        </div>
+      </div>
+  </div>
+</div>

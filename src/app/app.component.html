@@ -1,18 +1,31 @@
-<header >
-  <div class="nav-brand">
-    <a class="link" href="/"><h1>Bingeworthy</h1></a>
+<nav *ngIf="showNavBar"  [class.searchbar]="!showSearchbar" >
+  <a class="brand m-l-16"  routerLink="/">BingeWorthy</a>
+  <div *ngIf="showSearchbar" routerLink="/search" class="search-container">
+    <div class="suggestions">
+        <div class="suggestion">search  &nbsp; <span>  "horro movies"</span></div>
+        <div class="suggestion">search  &nbsp; <span>  "time travel movies"</span></div>
+        <div class="suggestion">search  &nbsp; <span>  "dc movies"</span></div>
+        <div class="suggestion">search  &nbsp; <span>  "marvel movies"</span></div>
+        <div class="suggestion">search  &nbsp; <span>  "thor 4"</span></div>
+    </div>
+    <i class="fa fa-search"></i>
   </div>
-  <div class="nav-links">
-
-      <a class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"  routerLink="/search"><i class="fa fa-search" ></i></a>
-      <a class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" routerLink="/explore">Explore</a>
-      <a class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"  routerLink="/profile" *ngIf="isLoggedIn()">Profile</a>
-      <a class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"  (click)="logout()" *ngIf="isLoggedIn()">Logout</a>
-      <a class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"   routerLink="/login" *ngIf="!isLoggedIn()">Login</a>
-      <a class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"  routerLink="/signup" *ngIf="!isLoggedIn()">Sign Up</a>
+  <div *ngIf="!showSearchbar"  class="search-inputcontainer">
+    <input placeholder="search for binge content" type="text">
+    <i class="fa fa-search"></i>
   </div>
-</header>
-<div class="container">
+    <ul *ngIf="showSearchbar" class="navbar">
+      <li routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" class="nav-item">
+        Home
+      </li>
+      <li routerLink="/explore" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" class="nav-item">
+        Explore
+      </li>
+      <li routerLink="/login" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" class="nav-item">
+        Login
+      </li>
+    </ul>
+</nav>
   <router-outlet></router-outlet>
-</div>
+
 

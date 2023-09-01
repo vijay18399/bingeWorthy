@@ -1,0 +1,48 @@
+<div class="login-page">
+   <div class="animation">
+    <ul>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+      <object data="assets/svg/tv2.svg" type=""></object>
+   </div>
+   <div class="login">
+
+   </div>
+</div>
+
+<!-- <div class="login-page">
+   <div class="card">
+    <form autocomplete="off" #ngForm="ngForm" (ngSubmit)="ngForm.form.valid && login()">
+      <h2>Log In</h2>
+      <div class="networkError" *ngIf="errorMessage">{{errorMessage}}</div>
+      <div class="input-container">
+        <label for="email">Email</label>
+        <input  type="email"  name="email" [(ngModel)]="loginData.email" required  #email="ngModel" [ngClass]="{ 'is-invalid': ngForm.submitted && email.errors }">
+        <div *ngIf="ngForm.submitted && email.errors" class="errors">
+          <div *ngIf="email.errors['required']">Email is required</div>
+          <div *ngIf="email.errors['email']">Email is invalid</div>
+        </div>
+      </div>
+      <div class="input-container">
+        <label for="password">Password</label>
+        <input   type="password"    name="password"    [(ngModel)]="loginData.password"  required #password="ngModel" [ngClass]="{ 'is-invalid': ngForm.submitted && password.errors }">
+        <div *ngIf="ngForm.submitted && password.errors" class="errors">
+          <div *ngIf="password.errors['required']">password is required</div>
+        </div>
+      </div>
+      <button  type="submit">Log In</button>
+    </form>
+  </div>
+
+</div> -->
+
