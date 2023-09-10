@@ -1,0 +1,54 @@
+<div class="auth-page">
+  <div class="area">
+    <img src="assets/dog.jpg" alt="">
+      <label>Sign in for full-access</label>
+  </div>
+  <div class="main">
+
+    <div class="content">
+    <h1>Sign in to BingeWorthy</h1>
+    <!-- <ul  class="errors">
+         <li class="error">
+            Email can't be blank
+         </li>
+           <li class="error">
+            Password can't be blank
+         </li>
+           <li class="error">
+            You must agree to the Terms of Service
+         </li>
+    </ul> -->
+    <div  class="buttons">
+      <div class="row">
+        <button  ><img class="icon" src="https://static-00.iconduck.com/assets.00/google-icon-2048x2048-czn3g8x8.png" alt="">Sign in with Google </button>
+       </div>
+    </div>
+    <div class="divider">or sign in with email</div>
+    <form  action="">
+
+      <div class="row">
+        <fieldset>
+          <label for="email">Username or Email</label>
+          <input name="email" type="text" />
+        </fieldset>
+      </div>
+      <div class="row">
+        <fieldset>
+          <label for="password">Password</label>
+          <input name="password" type="text" />
+        </fieldset>
+      </div>
+      <div class="row">
+        <button [disabled]="true" >Sign In</button>
+      </div>
+      <div class="row">
+          <div>
+            Don't have an account?  <a routerLink="/signup">Sign up</a>
+          </div>
+      </div>
+    </form>
+    </div>
+
+
+  </div>
+</div>

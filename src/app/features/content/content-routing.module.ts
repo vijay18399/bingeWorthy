@@ -3,8 +3,9 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component';
 import { ContentComponent } from './pages/content/content.component';
 import { ContentSliderComponent } from './pages/content-slider/content-slider.component';
-import { LoginComponent } from './pages/login/login.component';
 import { SearchComponent } from './pages/search/search.component';
+import { SignUpComponent } from './pages/sign-up/sign-up.component';
+import { SignInComponent } from './pages/sign-in/sign-in.component';
 
 const routes: Routes = [
   {
@@ -24,8 +25,12 @@ const routes: Routes = [
     path:'search',
   },
   {
-    component:LoginComponent,
-    path:'login',
+    component:SignUpComponent,
+    path:'signup',
+  },
+  {
+    component:SignInComponent,
+    path:'signin',
   },
 ];
 

@@ -1,0 +1,170 @@
+@import "form";
+@import "button";
+@import "animations";
+@import "media";
+
+.auth-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #F5F5F5;
+  .area {
+    min-height: 100vh;
+    height: 100%;
+    width: 400px;
+    background-color: #5E35B1;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+
+    @include mobile {
+      display: none;
+    }
+
+    img {
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      animation-name: stretch;
+      animation-duration: 2.0s;
+      animation-timing-function: ease-out;
+      animation-direction: alternate;
+      animation-iteration-count: infinite;
+      animation-play-state: running;
+    }
+
+    label {
+      color: white;
+      font-size: large;
+      font-family: monospace;
+    }
+  }
+
+  .main {
+    min-width: 400px;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0px 10px;
+    background-color: white;
+    button.backBtn {
+      @include iconButton('small');
+
+      @include mobile {
+        display: none;
+      }
+    }
+
+    .content {
+
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      h1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 34px;
+        margin-bottom: 24px;
+      }
+
+      .errors {
+        display: flex;
+        color: red;
+        flex-direction: column;
+        list-style: square;
+        margin-bottom: 20px;
+
+        .error {
+          font: -webkit-control;
+          margin-bottom: 6px;
+        }
+      }
+      .buttons{
+        max-width: 400px;
+        width: 100%;
+        display: flex;
+       flex-direction: column;
+        .row{
+          display: flex;
+          justify-content: center;
+          padding: 12px 0px;
+          button{
+            width: 100%;
+            margin-bottom:10px ;
+            @include button('large');
+          }
+          &:nth-child(1){
+            button{
+              background-color: white;
+              color: #0d0c22;
+              border: 1px solid gray;
+              &:hover{
+                background-color: white;
+                color: #0d0c22;
+              }
+            }
+          }
+        }
+
+      }
+      .divider {
+        text-align: center;
+        position: relative;
+        margin: 10px 0;
+        color: #6e6d7a;
+        font-family: auto;
+        &::before,
+        &::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            width: 40%;
+            height: 1px;
+            background-color: gainsboro;
+        }
+
+        &::before {
+            right: 100%;
+            margin-right: 10px;
+        }
+
+        &::after {
+            left: 100%;
+            margin-left: 10px;
+        }
+    }
+
+
+      form {
+        max-width: 400px;
+        width: 100%;
+        .row {
+          display: flex;
+          justify-content: center;
+          padding: 12px 0px;
+
+          a {
+            color: #0d0c22;
+            text-decoration: underline;
+          }
+
+          fieldset {
+            @include inputFieldset;
+          }
+
+          button {
+            @include button('large');
+          }
+
+        }
+      }
+    }
+
+  }
+}

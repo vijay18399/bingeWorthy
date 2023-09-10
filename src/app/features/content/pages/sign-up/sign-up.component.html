@@ -1,0 +1,77 @@
+<div class="auth-page">
+  <div class="area">
+    <img src="assets/login2.svg" alt="">
+      <label>your'e are just one step away</label>
+  </div>
+  <div class="main">
+    <button (click)="isGoogleLogin=true" [class.invisible]="isGoogleLogin" class="backBtn">
+      <i class="fa-solid fa-chevron-left"></i>
+    </button>
+    <div class="content">
+    <h1>Sign up to BingeWorthy</h1>
+    <!-- <ul  class="errors">
+         <li class="error">
+            Email can't be blank
+         </li>
+           <li class="error">
+            Password can't be blank
+         </li>
+           <li class="error">
+            You must agree to the Terms of Service
+         </li>
+    </ul> -->
+    <div *ngIf="isGoogleLogin" class="buttons">
+      <div class="row">
+        <button  ><img class="icon" src="https://static-00.iconduck.com/assets.00/google-icon-2048x2048-czn3g8x8.png" alt="">Sign up with Google </button>
+       </div>
+       <div class="row">
+        <button (click)="isGoogleLogin=false">Continue with email </button>
+       </div>
+    </div>
+    <form *ngIf="!isGoogleLogin" action="">
+      <div class="row">
+        <fieldset class="hasError">
+          <label for="name">Name</label>
+          <input name="name" type="text" />
+        </fieldset>
+        <fieldset>
+          <label for="username">Username</label>
+          <input name="username" type="text" />
+        </fieldset>
+      </div>
+      <div class="row">
+        <fieldset>
+          <label for="email">Email</label>
+          <input name="email" type="text" />
+        </fieldset>
+      </div>
+      <div class="row">
+        <fieldset>
+          <label for="password">Password</label>
+          <input placeholder="6+ characters" name="password" type="text" />
+        </fieldset>
+      </div>
+      <div class="row">
+        <fieldset>
+          <input type="checkbox" name="tndc">
+          <div  >
+            I agree with BingeWorthy's <a routerLink="/">Privacy Policy</a>
+          </div>
+
+        </fieldset>
+      </div>
+      <div class="row">
+        <button [disabled]="true" >Create Account</button>
+      </div>
+      <div class="row">
+        <div>
+          Already have an account?<a routerLink="/signin">Sign In</a>
+        </div>
+      </div>
+
+    </form>
+    </div>
+
+
+  </div>
+</div>

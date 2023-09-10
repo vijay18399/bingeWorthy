@@ -15,7 +15,7 @@ export class AppComponent {
       if (event instanceof NavigationEnd) {
         console.log(event.url)
         this.showSearchbar = event.url != '/search';
-        this.showNavBar = event.url != '/login';
+        this.showNavBar = !(event.url == '/signin' || event.url == '/signup');
       }
 
     });
